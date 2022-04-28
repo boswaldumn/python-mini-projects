@@ -1,4 +1,4 @@
-# BlackJack or 21 game
+# BlackJack or 21 game (for 2 people - Dealer & Program Operator)
 import random
 import os
 import time
@@ -15,18 +15,33 @@ player_cards = []
 while len(dealer_cards) != 2:
     dealer_cards.append(random.randint(1, 11))
     if len(dealer_cards) == 2:
-        print("Dealer has X & ", dealer_cards[1])
+        print("Dealer has X & \n", dealer_cards[1])
 
 
 # Player Cards
 while len(player_cards) != 2:
     player_cards.append(random.randint(1, 11))
     if len(player_cards) == 2:
-        print("You have ", player_cards)
+        print("You have \n", player_cards)
 
 
-    # Sum of the Dealer cards
-    # Sum of the Player cards
+# Sum of the Dealer cards
+if sum(dealer_cards) == 21:
+    print("Dealer has 21 and wins!\n")
+elif sum(dealer_cards) > 21:
+    print("Dealer has busted!\n")
+
+
+# Sum of the Player cards
+while sum(player_cards) < 21:
+    action = str(input("Do you want to stay or hit? (type 'hit' or 'stay')\n"))
+    if action == "hit":
+        player_cards.append(random.randint(1, 11))
+        print("You now have a total of " + str(sum(player_cards) + " from these cards \n", player_cards))
+    else:
+        print("The Dealer has a total of " + str(sum(dealer_cards)) + " with \n", dealer_cards)
+        print("You have a total of " + str(sum(player_cards)) + " with \n", player_cards)
+
     # Compare the sums of the cards between Dealer & Player
     # If P card sum is greater than 21 = BUST
     # If P card sum is less than 21 = Option Hit or Stay
