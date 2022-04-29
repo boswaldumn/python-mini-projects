@@ -37,7 +37,7 @@ while sum(player_cards) < 21:
     action = str(input("Do you want to stay or hit? (type 'hit' or 'stay')\n"))
     if action == "hit":
         player_cards.append(random.randint(1, 11))
-        print("You now have a total of " + str(sum(player_cards) + " from these cards \n", player_cards))
+        print("You now have a total of " + str(sum(player_cards)) + " from these cards \n", player_cards)
     else:
         print("The Dealer has a total of " + str(sum(dealer_cards)) + " with \n", dealer_cards)
         print("You have a total of " + str(sum(player_cards)) + " with \n", player_cards)
@@ -50,7 +50,7 @@ while sum(player_cards) < 21:
 if sum(player_cards) > 21:
     print("You Busted! Dealer wins.\n")
 elif sum(player_cards) == 21:
-    print("You have BLACKJACK! You win.")
+    print("You have BLACKJACK! You win.\n")
 
     # Compare the sums of the cards between Dealer & Player
     # If P card sum is greater than 21 = BUST
