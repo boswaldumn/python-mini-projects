@@ -1,4 +1,4 @@
-# BlackJack or 21 game (for 2 people - Dealer & Program Operator)
+# Simple BlackJack or 21 game (for 2 people - Dealer & Program Operator)
 import random
 import os
 import time
@@ -41,6 +41,16 @@ while sum(player_cards) < 21:
     else:
         print("The Dealer has a total of " + str(sum(dealer_cards)) + " with \n", dealer_cards)
         print("You have a total of " + str(sum(player_cards)) + " with \n", player_cards)
+        if sum(dealer_cards) > sum(player_cards):
+            print("Dealer wins!\n")
+        else: 
+            print ("You win!\n")
+            break
+
+if sum(player_cards) > 21:
+    print("You Busted! Dealer wins.\n")
+elif sum(player_cards) == 21:
+    print("You have BLACKJACK! You win.")
 
     # Compare the sums of the cards between Dealer & Player
     # If P card sum is greater than 21 = BUST
