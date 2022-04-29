@@ -1,5 +1,5 @@
 # Discord Bot
-This is a demo project of a discord bot which I have linked to Test Server
+This is a demo project of a discord bot which I have linked to Test Server. If you type a string that begins with "hello" into the text channel the bot should reply with the message, "Hello, I am a big fan of fleetwood mac".
 
 ## Dependencies
 ```
