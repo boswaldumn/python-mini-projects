@@ -1,5 +1,16 @@
 # Discord Bot
-This is a demo project of a discord bot which I have linked to Test Server. If you type a string that begins with "hello" into the text channel the bot should reply with the message, "Hello, I am a big fan of fleetwood mac".
+This is a demo project of multiple discord bots that I have linked to a Test Server in Discord. 
+
+## fleetwood-mac-bot.py
+If you type a string that begins with "hello" into the text channel the bot should reply with the message, "Hello, I am a big fan of fleetwood mac".
+
+## delete-messages.py
+If you type any string that isn't "hello" into the text channel the bot should delete the message.
+
+
+## music-bot
+tbd
+
 
 ## Dependencies
 ```
