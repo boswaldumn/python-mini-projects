@@ -2,7 +2,7 @@
 
 ## Description
 
-A python based 2-player blackjack game. It takes input from one player and randomly generates the card values for you and the dealer. The program will act as the dealer and you will be the player.
+A python based 2-player blackjack game. It takes input from one player and randomly generates the card values for both you and the dealer. The program will act as the dealer and you will be the player.
 
 ## Prerequisites
 Use any Python online compiler or download python IDE from https://www.python.org/
